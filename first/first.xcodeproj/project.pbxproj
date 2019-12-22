@@ -10,10 +10,10 @@
 		F7EBF8BD23AF2DCA0011D5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EBF8BC23AF2DCA0011D5B6 /* AppDelegate.swift */; };
 		F7EBF8BF23AF2DCA0011D5B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EBF8BE23AF2DCA0011D5B6 /* ViewController.swift */; };
 		F7EBF8C223AF2DCA0011D5B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EBF8C023AF2DCA0011D5B6 /* Main.storyboard */; };
-		F7EBF8C423AF2DCC0011D5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EBF8C323AF2DCC0011D5B6 /* Assets.xcassets */; };
 		F7EBF8C723AF2DCC0011D5B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EBF8C523AF2DCC0011D5B6 /* LaunchScreen.storyboard */; };
 		F7EBF8D223AF2DCD0011D5B6 /* firstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EBF8D123AF2DCD0011D5B6 /* firstTests.swift */; };
 		F7EBF8DD23AF2DCD0011D5B6 /* firstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EBF8DC23AF2DCD0011D5B6 /* firstUITests.swift */; };
+		F7EBF8ED23AF583C0011D5B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EBF8EC23AF583C0011D5B6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		F7EBF8BC23AF2DCA0011D5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7EBF8BE23AF2DCA0011D5B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7EBF8C123AF2DCA0011D5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F7EBF8C323AF2DCC0011D5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7EBF8C623AF2DCC0011D5B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7EBF8C823AF2DCC0011D5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7EBF8CD23AF2DCD0011D5B6 /* firstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		F7EBF8D823AF2DCD0011D5B6 /* firstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EBF8DC23AF2DCD0011D5B6 /* firstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstUITests.swift; sourceTree = "<group>"; };
 		F7EBF8DE23AF2DCD0011D5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EBF8EC23AF583C0011D5B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 				F7EBF8BC23AF2DCA0011D5B6 /* AppDelegate.swift */,
 				F7EBF8BE23AF2DCA0011D5B6 /* ViewController.swift */,
 				F7EBF8C023AF2DCA0011D5B6 /* Main.storyboard */,
-				F7EBF8C323AF2DCC0011D5B6 /* Assets.xcassets */,
+				F7EBF8EC23AF583C0011D5B6 /* Assets.xcassets */,
 				F7EBF8C523AF2DCC0011D5B6 /* LaunchScreen.storyboard */,
 				F7EBF8C823AF2DCC0011D5B6 /* Info.plist */,
 			);
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7EBF8C723AF2DCC0011D5B6 /* LaunchScreen.storyboard in Resources */,
-				F7EBF8C423AF2DCC0011D5B6 /* Assets.xcassets in Resources */,
+				F7EBF8ED23AF583C0011D5B6 /* Assets.xcassets in Resources */,
 				F7EBF8C223AF2DCA0011D5B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
