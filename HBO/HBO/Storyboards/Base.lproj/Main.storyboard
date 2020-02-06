@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lT4-li-xgz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="YS2-xT-jD6">
+            <objects>
+                <viewController id="cj1-CO-rMd" customClass="ViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgg-TO-j7g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfm-yJ-YIC">
+                                <rect key="frame" x="41" y="183" width="64" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.77416398720000001" green="0.99749740860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rf-sU-Ooj">
+                                <rect key="frame" x="41" y="221" width="332" height="56"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="qpH-PS-jfD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="EditingText:" destination="cj1-CO-rMd" eventType="editingChanged" id="wJj-9t-lCK"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTl-zp-Gpn">
+                                <rect key="frame" x="190" y="618" width="34" height="30"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ViewInputs:" destination="cj1-CO-rMd" eventType="touchUpInside" id="lb4-IF-SWo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7rf-sU-Ooj" firstAttribute="top" secondItem="dfm-yJ-YIC" secondAttribute="bottom" constant="8" symbolic="YES" id="1G5-Df-go1"/>
+                            <constraint firstItem="XQo-Uy-89G" firstAttribute="bottom" secondItem="7rf-sU-Ooj" secondAttribute="bottom" constant="585" id="KFB-GL-h96"/>
+                            <constraint firstItem="BTl-zp-Gpn" firstAttribute="centerX" secondItem="7rf-sU-Ooj" secondAttribute="centerX" id="UAD-RW-caq"/>
+                            <constraint firstItem="7rf-sU-Ooj" firstAttribute="leading" secondItem="dfm-yJ-YIC" secondAttribute="leading" id="YyP-Q4-6BH"/>
+                            <constraint firstItem="7rf-sU-Ooj" firstAttribute="leading" secondItem="XQo-Uy-89G" secondAttribute="leading" constant="41" id="jcw-tV-4HF"/>
+                            <constraint firstItem="XQo-Uy-89G" firstAttribute="bottom" secondItem="BTl-zp-Gpn" secondAttribute="bottom" constant="214" id="nNn-RR-Wnh"/>
+                            <constraint firstItem="7rf-sU-Ooj" firstAttribute="centerX" secondItem="tgg-TO-j7g" secondAttribute="centerX" id="xlh-vB-Ii8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XQo-Uy-89G"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtName" destination="7rf-sU-Ooj" id="E2d-3k-4xZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcf-6g-Kzk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="17"/>
+        </scene>
+        <!--Movie List View Controller-->
+        <scene sceneID="Q1y-Xd-yPg">
+            <objects>
+                <tableViewController id="lT4-li-xgz" customClass="MovieListViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cuV-Iv-CTz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="lT4-li-xgz" id="MXa-wF-Ttp"/>
+                            <outlet property="delegate" destination="lT4-li-xgz" id="7h8-kl-Jdq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvo-Zt-i7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2674" y="68"/>
+        </scene>
+        <!--Add Movie View Controller-->
+        <scene sceneID="9Uh-iw-G29">
+            <objects>
+                <viewController id="fUM-mg-iJC" customClass="AddMovieViewController" customModule="HBO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZS-uv-nN6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hbo-now-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mXV-z7-nqZ">
+                                <rect key="frame" x="87" y="90" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Movie titile" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-08-ZqT">
+                                <rect key="frame" x="29" y="217" width="357" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gkm-Fx-Pxb">
+                                <rect key="frame" x="29" y="293" width="357" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-3a-wm2">
+                                <rect key="frame" x="29" y="373" width="357" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addimage" translatesAutoresizingMaskIntoConstraints="NO" id="RCs-Gi-IhI">
+                                <rect key="frame" x="87" y="459" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7h-q2-U9M">
+                                <rect key="frame" x="29" y="624" width="357" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29612633179999998" green="0.36452498630000002" blue="0.82391515540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Upload Image">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="UploadImage:" destination="fUM-mg-iJC" eventType="touchUpInside" id="zv2-SM-daA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD2-Qz-X1F">
+                                <rect key="frame" x="29" y="778" width="357" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29612633179999998" green="0.36452498630000002" blue="0.82391515540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Save Movie Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveMovieData:" destination="fUM-mg-iJC" eventType="touchUpInside" id="ZYE-da-6bU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="BtV-F8-uky"/>
+                    </view>
+                    <connections>
+                        <outlet property="MovieImage" destination="RCs-Gi-IhI" id="veC-50-TLO"/>
+                        <outlet property="txtMovieRating" destination="Wbn-3a-wm2" id="ljZ-6X-6Hr"/>
+                        <outlet property="txtMovieTitle" destination="dn8-08-ZqT" id="fEW-fI-p22"/>
+                        <outlet property="txtMovieYear" destination="Gkm-Fx-Pxb" id="7R5-Ul-A6n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4O-rt-PVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addimage" width="225" height="225"/>
+        <image name="hbo-now-logo" width="1600" height="900"/>
+    </resources>
+</document>
